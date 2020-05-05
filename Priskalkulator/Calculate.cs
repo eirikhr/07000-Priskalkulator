@@ -37,7 +37,7 @@ namespace Priskalkulator
                 {
                     if (str == 1)
                     {
-                        return "TL Agder, Dagtid, Vanlig bil.";
+                        return "TL Agder, Dagtid, Vanlig bil....";
                     }
                     return "TL Agder - Dagtid";
                 }
