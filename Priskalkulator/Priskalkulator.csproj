@@ -46,9 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculate.cs" />
-    <Compile Include="PriserAgder.cs" />
-    <Compile Include="Beregning.cs" />
+    <Compile Include="Calc.cs" />
     <Compile Include="Hovedvindu.cs">
       <SubType>Form</SubType>
     </Compile>
