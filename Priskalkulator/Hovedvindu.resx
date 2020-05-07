@@ -117,6 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="toolDag.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>11, 8</value>
+  </metadata>
+  <metadata name="toolKveldHelg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>97, 10</value>
+  </metadata>
+  <metadata name="toolHoly.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>463, 12</value>
+  </metadata>
+  <data name="radioAtHoly.ToolTip" xml:space="preserve">
+    <value>Fra og med kl 12:00: Påskeaften, Pinseaften, Julaften, Nyttårsaften. HELE DØGNET: Skjærtorsdag, langredag, 1.-2. påskedag, Kirsti himmelfart, 1.-2. pinsedag, 1.-2. juledag, 1. nyttårsdag, 1. og 17. mai.</value>
+  </data>
+  <data name="radioMtHoly.ToolTip" xml:space="preserve">
+    <value>Påske-, pinse-, jul- og nyttårsaften fra kl. 12 til kl. 06 påfølgende dag. FRA KL 06:00 til 06:00 PÅFØLGENDE DAG: nyttårsdag, skjærtorsdag, langfredag, 1. og 2. påskedag, Kirsti himmelfartsdag, 1.-2. pinsedag, 1. og 17. mai og 1.-2. juledag</value>
+  </data>
+  <metadata name="toolNattMt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>769, 12</value>
+  </metadata>
+  <metadata name="toolKveldMt.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>561, 12</value>
+  </metadata>
+  <metadata name="toolLørdag.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>658, 12</value>
+  </metadata>
+  <data name="radioVtHoly.ToolTip" xml:space="preserve">
+    <value>Fra og med kl 12:00: Påskeaften, Pinseaften, Julaften, Nyttårsaften. HELE DØGNET: Skjærtorsdag, langredag, 1.-2. påskedag, Kirsti himmelfart, 1.-2. pinsedag, 1.-2. juledag, 1. nyttårsdag, 1. og 17. mai.</value>
+  </data>
+  <metadata name="toolKveldHverdag.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>211, 11</value>
+  </metadata>
+  <metadata name="toolNattHelg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>352, 12</value>
+  </metadata>
+  <metadata name="toolCopy.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>866, 12</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>967, 12</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>210</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

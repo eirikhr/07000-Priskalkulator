@@ -28,52 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HovedVindu));
             this.calculateButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
             this.radioMandal = new System.Windows.Forms.RadioButton();
             this.radioVennesla = new System.Windows.Forms.RadioButton();
             this.radioAgder = new System.Windows.Forms.RadioButton();
-            this.taxiLag = new System.Windows.Forms.GroupBox();
+            this.taxiLagBox = new System.Windows.Forms.GroupBox();
             this.resultBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.kmBox = new System.Windows.Forms.TextBox();
+            this.minBox = new System.Windows.Forms.TextBox();
+            this.fremBox = new System.Windows.Forms.TextBox();
+            this.tilBox = new System.Windows.Forms.TextBox();
             this.paxBox = new System.Windows.Forms.GroupBox();
             this.radioLiten = new System.Windows.Forms.RadioButton();
             this.radioMedium = new System.Windows.Forms.RadioButton();
             this.radioStor = new System.Windows.Forms.RadioButton();
             this.tidAgder = new System.Windows.Forms.GroupBox();
+            this.radioAtDag = new System.Windows.Forms.RadioButton();
+            this.radioAtKveld = new System.Windows.Forms.RadioButton();
+            this.radioAtHoly = new System.Windows.Forms.RadioButton();
             this.tidMandal = new System.Windows.Forms.GroupBox();
-            this.tidVennesla = new System.Windows.Forms.GroupBox();
-            this.radioVtHoly = new System.Windows.Forms.RadioButton();
-            this.radioVtDag = new System.Windows.Forms.RadioButton();
-            this.radioVtKveld = new System.Windows.Forms.RadioButton();
-            this.radioVtHelg = new System.Windows.Forms.RadioButton();
             this.radioMtHoly = new System.Windows.Forms.RadioButton();
             this.radioMtHelg = new System.Windows.Forms.RadioButton();
             this.radioMtDag = new System.Windows.Forms.RadioButton();
             this.radioMtKveld = new System.Windows.Forms.RadioButton();
             this.radioMtLørdag = new System.Windows.Forms.RadioButton();
-            this.radioAtDag = new System.Windows.Forms.RadioButton();
-            this.radioAtKveld = new System.Windows.Forms.RadioButton();
-            this.radioAtHoly = new System.Windows.Forms.RadioButton();
-            this.taxiLag.SuspendLayout();
+            this.tidVennesla = new System.Windows.Forms.GroupBox();
+            this.radioVtHoly = new System.Windows.Forms.RadioButton();
+            this.radioVtDag = new System.Windows.Forms.RadioButton();
+            this.radioVtKveld = new System.Windows.Forms.RadioButton();
+            this.radioVtHelg = new System.Windows.Forms.RadioButton();
+            this.kmLabel = new System.Windows.Forms.Label();
+            this.minLabel = new System.Windows.Forms.Label();
+            this.fremLabel = new System.Windows.Forms.Label();
+            this.tilLabel = new System.Windows.Forms.Label();
+            this.resLabel = new System.Windows.Forms.Label();
+            this.toolKveldHelg = new System.Windows.Forms.ToolTip(this.components);
+            this.toolDag = new System.Windows.Forms.ToolTip(this.components);
+            this.toolKveldHverdag = new System.Windows.Forms.ToolTip(this.components);
+            this.toolNattHelg = new System.Windows.Forms.ToolTip(this.components);
+            this.toolHoly = new System.Windows.Forms.ToolTip(this.components);
+            this.toolKveldMt = new System.Windows.Forms.ToolTip(this.components);
+            this.toolLørdag = new System.Windows.Forms.ToolTip(this.components);
+            this.toolNattMt = new System.Windows.Forms.ToolTip(this.components);
+            this.copyButton = new System.Windows.Forms.Button();
+            this.toolCopy = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.omToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.takstinformasjonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.versjonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.avsluttToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.taxiLagBox.SuspendLayout();
             this.paxBox.SuspendLayout();
             this.tidAgder.SuspendLayout();
             this.tidMandal.SuspendLayout();
             this.tidVennesla.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // calculateButton
             // 
             this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.calculateButton.Location = new System.Drawing.Point(644, 567);
+            this.calculateButton.Location = new System.Drawing.Point(345, 264);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(126, 86);
-            this.calculateButton.TabIndex = 0;
+            this.calculateButton.TabIndex = 20;
             this.calculateButton.Text = "Kalkulèr";
             this.calculateButton.UseVisualStyleBackColor = true;
             this.calculateButton.Click += new System.EventHandler(this.calculate_Click);
@@ -81,10 +104,10 @@
             // resetButton
             // 
             this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.resetButton.Location = new System.Drawing.Point(644, 475);
+            this.resetButton.Location = new System.Drawing.Point(345, 172);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(126, 86);
-            this.resetButton.TabIndex = 0;
+            this.resetButton.TabIndex = 19;
             this.resetButton.Text = "Nullstill";
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.reset_Click);
@@ -95,7 +118,7 @@
             this.radioMandal.Location = new System.Drawing.Point(6, 65);
             this.radioMandal.Name = "radioMandal";
             this.radioMandal.Size = new System.Drawing.Size(116, 17);
-            this.radioMandal.TabIndex = 1;
+            this.radioMandal.TabIndex = 3;
             this.radioMandal.TabStop = true;
             this.radioMandal.Text = "07000 Mandal Taxi";
             this.radioMandal.UseVisualStyleBackColor = true;
@@ -108,7 +131,7 @@
             this.radioVennesla.Location = new System.Drawing.Point(6, 42);
             this.radioVennesla.Name = "radioVennesla";
             this.radioVennesla.Size = new System.Drawing.Size(125, 17);
-            this.radioVennesla.TabIndex = 1;
+            this.radioVennesla.TabIndex = 2;
             this.radioVennesla.TabStop = true;
             this.radioVennesla.Text = "07000 Vennesla Taxi";
             this.radioVennesla.UseVisualStyleBackColor = true;
@@ -127,62 +150,60 @@
             this.radioAgder.UseVisualStyleBackColor = true;
             this.radioAgder.CheckedChanged += new System.EventHandler(this.radioAgder_CheckedChanged);
             // 
-            // taxiLag
+            // taxiLagBox
             // 
-            this.taxiLag.Controls.Add(this.radioAgder);
-            this.taxiLag.Controls.Add(this.radioVennesla);
-            this.taxiLag.Controls.Add(this.radioMandal);
-            this.taxiLag.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.taxiLag.Location = new System.Drawing.Point(602, 12);
-            this.taxiLag.Name = "taxiLag";
-            this.taxiLag.Size = new System.Drawing.Size(168, 86);
-            this.taxiLag.TabIndex = 3;
-            this.taxiLag.TabStop = false;
-            this.taxiLag.Text = "Taxilag:";
+            this.taxiLagBox.Controls.Add(this.radioAgder);
+            this.taxiLagBox.Controls.Add(this.radioVennesla);
+            this.taxiLagBox.Controls.Add(this.radioMandal);
+            this.taxiLagBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taxiLagBox.Location = new System.Drawing.Point(13, 30);
+            this.taxiLagBox.Name = "taxiLagBox";
+            this.taxiLagBox.Size = new System.Drawing.Size(168, 86);
+            this.taxiLagBox.TabIndex = 3;
+            this.taxiLagBox.TabStop = false;
+            this.taxiLagBox.Text = "Taxilag:";
             // 
             // resultBox
             // 
             this.resultBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultBox.Location = new System.Drawing.Point(464, 606);
+            this.resultBox.Location = new System.Drawing.Point(196, 264);
             this.resultBox.Name = "resultBox";
             this.resultBox.Size = new System.Drawing.Size(143, 47);
-            this.resultBox.TabIndex = 4;
+            this.resultBox.TabIndex = 17;
             this.resultBox.TextChanged += new System.EventHandler(this.resultBox_TextChanged);
             // 
-            // textBox1
+            // kmBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.kmBox.Location = new System.Drawing.Point(297, 154);
+            this.kmBox.Name = "kmBox";
+            this.kmBox.Size = new System.Drawing.Size(39, 20);
+            this.kmBox.TabIndex = 13;
+            this.kmBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.kmBox_KeyPress);
             // 
-            // textBox2
+            // minBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(73, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.minBox.Location = new System.Drawing.Point(297, 180);
+            this.minBox.Name = "minBox";
+            this.minBox.Size = new System.Drawing.Size(39, 20);
+            this.minBox.TabIndex = 14;
+            this.minBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.minBox_KeyPress);
             // 
-            // textBox3
+            // fremBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(73, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.fremBox.Location = new System.Drawing.Point(297, 206);
+            this.fremBox.Name = "fremBox";
+            this.fremBox.Size = new System.Drawing.Size(39, 20);
+            this.fremBox.TabIndex = 15;
+            this.fremBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.fremBox_KeyPress);
             // 
-            // textBox4
+            // tilBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(73, 128);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(73, 154);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 6;
+            this.tilBox.Location = new System.Drawing.Point(297, 232);
+            this.tilBox.Name = "tilBox";
+            this.tilBox.Size = new System.Drawing.Size(39, 20);
+            this.tilBox.TabIndex = 16;
+            this.tilBox.TextChanged += new System.EventHandler(this.tilBox_TextChanged);
+            this.tilBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tilBox_KeyPress);
             // 
             // paxBox
             // 
@@ -190,7 +211,7 @@
             this.paxBox.Controls.Add(this.radioMedium);
             this.paxBox.Controls.Add(this.radioStor);
             this.paxBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paxBox.Location = new System.Drawing.Point(602, 104);
+            this.paxBox.Location = new System.Drawing.Point(13, 122);
             this.paxBox.Name = "paxBox";
             this.paxBox.Size = new System.Drawing.Size(168, 86);
             this.paxBox.TabIndex = 7;
@@ -200,11 +221,12 @@
             // radioLiten
             // 
             this.radioLiten.AutoSize = true;
+            this.radioLiten.Checked = true;
             this.radioLiten.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.radioLiten.Location = new System.Drawing.Point(6, 19);
             this.radioLiten.Name = "radioLiten";
             this.radioLiten.Size = new System.Drawing.Size(63, 17);
-            this.radioLiten.TabIndex = 1;
+            this.radioLiten.TabIndex = 4;
             this.radioLiten.TabStop = true;
             this.radioLiten.Text = "1-4 pax.";
             this.radioLiten.UseVisualStyleBackColor = true;
@@ -216,8 +238,7 @@
             this.radioMedium.Location = new System.Drawing.Point(6, 42);
             this.radioMedium.Name = "radioMedium";
             this.radioMedium.Size = new System.Drawing.Size(63, 17);
-            this.radioMedium.TabIndex = 1;
-            this.radioMedium.TabStop = true;
+            this.radioMedium.TabIndex = 5;
             this.radioMedium.Text = "5-8 pax.";
             this.radioMedium.UseVisualStyleBackColor = true;
             // 
@@ -227,8 +248,7 @@
             this.radioStor.Location = new System.Drawing.Point(6, 65);
             this.radioStor.Name = "radioStor";
             this.radioStor.Size = new System.Drawing.Size(69, 17);
-            this.radioStor.TabIndex = 1;
-            this.radioStor.TabStop = true;
+            this.radioStor.TabIndex = 6;
             this.radioStor.Text = "9-16 pax.";
             this.radioStor.UseVisualStyleBackColor = true;
             // 
@@ -238,13 +258,50 @@
             this.tidAgder.Controls.Add(this.radioAtKveld);
             this.tidAgder.Controls.Add(this.radioAtHoly);
             this.tidAgder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tidAgder.Location = new System.Drawing.Point(602, 196);
+            this.tidAgder.Location = new System.Drawing.Point(13, 214);
             this.tidAgder.Name = "tidAgder";
             this.tidAgder.Size = new System.Drawing.Size(168, 86);
             this.tidAgder.TabIndex = 8;
             this.tidAgder.TabStop = false;
             this.tidAgder.Text = "Tidspunkt";
             this.tidAgder.Visible = false;
+            // 
+            // radioAtDag
+            // 
+            this.radioAtDag.AutoSize = true;
+            this.radioAtDag.Checked = true;
+            this.radioAtDag.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radioAtDag.Location = new System.Drawing.Point(6, 19);
+            this.radioAtDag.Name = "radioAtDag";
+            this.radioAtDag.Size = new System.Drawing.Size(56, 17);
+            this.radioAtDag.TabIndex = 1;
+            this.radioAtDag.TabStop = true;
+            this.radioAtDag.Text = "Dagtid";
+            this.toolDag.SetToolTip(this.radioAtDag, "06:00 - 20:00 alle hverdager.");
+            this.radioAtDag.UseVisualStyleBackColor = true;
+            // 
+            // radioAtKveld
+            // 
+            this.radioAtKveld.AutoSize = true;
+            this.radioAtKveld.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radioAtKveld.Location = new System.Drawing.Point(6, 42);
+            this.radioAtKveld.Name = "radioAtKveld";
+            this.radioAtKveld.Size = new System.Drawing.Size(79, 17);
+            this.radioAtKveld.TabIndex = 1;
+            this.radioAtKveld.Text = "Kveld/Helg";
+            this.toolKveldHelg.SetToolTip(this.radioAtKveld, "Hverdager 20:00-06:00 og 20:00. Fredag kl 2000 til 06:00 mandag morgen.");
+            this.radioAtKveld.UseVisualStyleBackColor = true;
+            // 
+            // radioAtHoly
+            // 
+            this.radioAtHoly.AutoSize = true;
+            this.radioAtHoly.Location = new System.Drawing.Point(6, 65);
+            this.radioAtHoly.Name = "radioAtHoly";
+            this.radioAtHoly.Size = new System.Drawing.Size(69, 17);
+            this.radioAtHoly.TabIndex = 1;
+            this.radioAtHoly.Text = "Helligdag";
+            this.toolHoly.SetToolTip(this.radioAtHoly, resources.GetString("radioAtHoly.ToolTip"));
+            this.radioAtHoly.UseVisualStyleBackColor = true;
             // 
             // tidMandal
             // 
@@ -254,13 +311,72 @@
             this.tidMandal.Controls.Add(this.radioMtKveld);
             this.tidMandal.Controls.Add(this.radioMtLørdag);
             this.tidMandal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tidMandal.Location = new System.Drawing.Point(602, 196);
+            this.tidMandal.Location = new System.Drawing.Point(13, 214);
             this.tidMandal.Name = "tidMandal";
             this.tidMandal.Size = new System.Drawing.Size(168, 136);
             this.tidMandal.TabIndex = 10;
             this.tidMandal.TabStop = false;
             this.tidMandal.Text = "Tidspunkt";
             this.tidMandal.Visible = false;
+            // 
+            // radioMtHoly
+            // 
+            this.radioMtHoly.AutoSize = true;
+            this.radioMtHoly.Checked = true;
+            this.radioMtHoly.Location = new System.Drawing.Point(6, 111);
+            this.radioMtHoly.Name = "radioMtHoly";
+            this.radioMtHoly.Size = new System.Drawing.Size(69, 17);
+            this.radioMtHoly.TabIndex = 3;
+            this.radioMtHoly.TabStop = true;
+            this.radioMtHoly.Text = "Helligdag";
+            this.toolHoly.SetToolTip(this.radioMtHoly, resources.GetString("radioMtHoly.ToolTip"));
+            this.radioMtHoly.UseVisualStyleBackColor = true;
+            // 
+            // radioMtHelg
+            // 
+            this.radioMtHelg.AutoSize = true;
+            this.radioMtHelg.Location = new System.Drawing.Point(6, 88);
+            this.radioMtHelg.Name = "radioMtHelg";
+            this.radioMtHelg.Size = new System.Drawing.Size(72, 17);
+            this.radioMtHelg.TabIndex = 2;
+            this.radioMtHelg.Text = "Helg/Natt";
+            this.toolNattMt.SetToolTip(this.radioMtHelg, "Mandag-Lørdag 00:00-06:00. Lørdag kl 15:00 til mandag kl 06:00.");
+            this.radioMtHelg.UseVisualStyleBackColor = true;
+            // 
+            // radioMtDag
+            // 
+            this.radioMtDag.AutoSize = true;
+            this.radioMtDag.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radioMtDag.Location = new System.Drawing.Point(6, 19);
+            this.radioMtDag.Name = "radioMtDag";
+            this.radioMtDag.Size = new System.Drawing.Size(56, 17);
+            this.radioMtDag.TabIndex = 1;
+            this.radioMtDag.Text = "Dagtid";
+            this.toolDag.SetToolTip(this.radioMtDag, "06:00 - 18:00 alle hverdager.");
+            this.radioMtDag.UseVisualStyleBackColor = true;
+            // 
+            // radioMtKveld
+            // 
+            this.radioMtKveld.AutoSize = true;
+            this.radioMtKveld.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.radioMtKveld.Location = new System.Drawing.Point(6, 42);
+            this.radioMtKveld.Name = "radioMtKveld";
+            this.radioMtKveld.Size = new System.Drawing.Size(100, 17);
+            this.radioMtKveld.TabIndex = 1;
+            this.radioMtKveld.Text = "Kveld (hverdag)";
+            this.toolKveldMt.SetToolTip(this.radioMtKveld, "Mandag-fredag kl 18:00 - 00:00.");
+            this.radioMtKveld.UseVisualStyleBackColor = true;
+            // 
+            // radioMtLørdag
+            // 
+            this.radioMtLørdag.AutoSize = true;
+            this.radioMtLørdag.Location = new System.Drawing.Point(6, 65);
+            this.radioMtLørdag.Name = "radioMtLørdag";
+            this.radioMtLørdag.Size = new System.Drawing.Size(96, 17);
+            this.radioMtLørdag.TabIndex = 1;
+            this.radioMtLørdag.Text = "Lørdag (dagtid)";
+            this.toolLørdag.SetToolTip(this.radioMtLørdag, "Kl. 06:00 - 15:00");
+            this.radioMtLørdag.UseVisualStyleBackColor = true;
             // 
             // tidVennesla
             // 
@@ -269,7 +385,7 @@
             this.tidVennesla.Controls.Add(this.radioVtKveld);
             this.tidVennesla.Controls.Add(this.radioVtHelg);
             this.tidVennesla.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tidVennesla.Location = new System.Drawing.Point(602, 196);
+            this.tidVennesla.Location = new System.Drawing.Point(13, 214);
             this.tidVennesla.Name = "tidVennesla";
             this.tidVennesla.Size = new System.Drawing.Size(168, 108);
             this.tidVennesla.TabIndex = 9;
@@ -286,6 +402,7 @@
             this.radioVtHoly.TabIndex = 2;
             this.radioVtHoly.TabStop = true;
             this.radioVtHoly.Text = "Helligdag";
+            this.toolHoly.SetToolTip(this.radioVtHoly, resources.GetString("radioVtHoly.ToolTip"));
             this.radioVtHoly.UseVisualStyleBackColor = true;
             // 
             // radioVtDag
@@ -298,6 +415,7 @@
             this.radioVtDag.TabIndex = 1;
             this.radioVtDag.TabStop = true;
             this.radioVtDag.Text = "Dagtid";
+            this.toolDag.SetToolTip(this.radioVtDag, "06:00 - 20:00 alle hverdager.");
             this.radioVtDag.UseVisualStyleBackColor = true;
             // 
             // radioVtKveld
@@ -310,6 +428,7 @@
             this.radioVtKveld.TabIndex = 1;
             this.radioVtKveld.TabStop = true;
             this.radioVtKveld.Text = "Kveld (hverdag) / Dag (helg)";
+            this.toolKveldHverdag.SetToolTip(this.radioVtKveld, "20:00 - 06:00 mandag-torsdag. Lørdag: 06:00 - 18:00. Fra og med 06:00 søndag.");
             this.radioVtKveld.UseVisualStyleBackColor = true;
             // 
             // radioVtHelg
@@ -317,129 +436,192 @@
             this.radioVtHelg.AutoSize = true;
             this.radioVtHelg.Location = new System.Drawing.Point(6, 65);
             this.radioVtHelg.Name = "radioVtHelg";
-            this.radioVtHelg.Size = new System.Drawing.Size(81, 17);
+            this.radioVtHelg.Size = new System.Drawing.Size(74, 17);
             this.radioVtHelg.TabIndex = 1;
             this.radioVtHelg.TabStop = true;
-            this.radioVtHelg.Text = "Kveld (helg)";
+            this.radioVtHelg.Text = "Natt (helg)";
+            this.toolNattHelg.SetToolTip(this.radioVtHelg, "Fredag kl 20:00 - lørdag kl 06:00. Lørdag kl 18:00 - søndag kl 06:00.");
             this.radioVtHelg.UseVisualStyleBackColor = true;
             // 
-            // radioMtHoly
+            // kmLabel
             // 
-            this.radioMtHoly.AutoSize = true;
-            this.radioMtHoly.Location = new System.Drawing.Point(6, 111);
-            this.radioMtHoly.Name = "radioMtHoly";
-            this.radioMtHoly.Size = new System.Drawing.Size(69, 17);
-            this.radioMtHoly.TabIndex = 3;
-            this.radioMtHoly.TabStop = true;
-            this.radioMtHoly.Text = "Helligdag";
-            this.radioMtHoly.UseVisualStyleBackColor = true;
+            this.kmLabel.AutoSize = true;
+            this.kmLabel.Location = new System.Drawing.Point(238, 158);
+            this.kmLabel.Name = "kmLabel";
+            this.kmLabel.Size = new System.Drawing.Size(53, 13);
+            this.kmLabel.TabIndex = 11;
+            this.kmLabel.Text = "Kilometer:";
             // 
-            // radioMtHelg
+            // minLabel
             // 
-            this.radioMtHelg.AutoSize = true;
-            this.radioMtHelg.Location = new System.Drawing.Point(6, 88);
-            this.radioMtHelg.Name = "radioMtHelg";
-            this.radioMtHelg.Size = new System.Drawing.Size(72, 17);
-            this.radioMtHelg.TabIndex = 2;
-            this.radioMtHelg.TabStop = true;
-            this.radioMtHelg.Text = "Helg/Natt";
-            this.radioMtHelg.UseVisualStyleBackColor = true;
+            this.minLabel.AutoSize = true;
+            this.minLabel.Location = new System.Drawing.Point(243, 183);
+            this.minLabel.Name = "minLabel";
+            this.minLabel.Size = new System.Drawing.Size(48, 13);
+            this.minLabel.TabIndex = 11;
+            this.minLabel.Text = "Minutter:";
             // 
-            // radioMtDag
+            // fremLabel
             // 
-            this.radioMtDag.AutoSize = true;
-            this.radioMtDag.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioMtDag.Location = new System.Drawing.Point(6, 19);
-            this.radioMtDag.Name = "radioMtDag";
-            this.radioMtDag.Size = new System.Drawing.Size(56, 17);
-            this.radioMtDag.TabIndex = 1;
-            this.radioMtDag.TabStop = true;
-            this.radioMtDag.Text = "Dagtid";
-            this.radioMtDag.UseVisualStyleBackColor = true;
+            this.fremLabel.AutoSize = true;
+            this.fremLabel.Location = new System.Drawing.Point(227, 209);
+            this.fremLabel.Name = "fremLabel";
+            this.fremLabel.Size = new System.Drawing.Size(64, 13);
+            this.fremLabel.TabIndex = 11;
+            this.fremLabel.Text = "Fremkjøring:";
+            this.fremLabel.Click += new System.EventHandler(this.fremLabel_Click);
             // 
-            // radioMtKveld
+            // tilLabel
             // 
-            this.radioMtKveld.AutoSize = true;
-            this.radioMtKveld.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioMtKveld.Location = new System.Drawing.Point(6, 42);
-            this.radioMtKveld.Name = "radioMtKveld";
-            this.radioMtKveld.Size = new System.Drawing.Size(52, 17);
-            this.radioMtKveld.TabIndex = 1;
-            this.radioMtKveld.TabStop = true;
-            this.radioMtKveld.Text = "Kveld";
-            this.radioMtKveld.UseVisualStyleBackColor = true;
+            this.tilLabel.AutoSize = true;
+            this.tilLabel.Location = new System.Drawing.Point(250, 235);
+            this.tilLabel.Name = "tilLabel";
+            this.tilLabel.Size = new System.Drawing.Size(41, 13);
+            this.tilLabel.TabIndex = 11;
+            this.tilLabel.Text = "Tillegg:";
             // 
-            // radioMtLørdag
+            // resLabel
             // 
-            this.radioMtLørdag.AutoSize = true;
-            this.radioMtLørdag.Location = new System.Drawing.Point(6, 65);
-            this.radioMtLørdag.Name = "radioMtLørdag";
-            this.radioMtLørdag.Size = new System.Drawing.Size(58, 17);
-            this.radioMtLørdag.TabIndex = 1;
-            this.radioMtLørdag.TabStop = true;
-            this.radioMtLørdag.Text = "Lørdag";
-            this.radioMtLørdag.UseVisualStyleBackColor = true;
+            this.resLabel.AutoSize = true;
+            this.resLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resLabel.Location = new System.Drawing.Point(193, 245);
+            this.resLabel.Name = "resLabel";
+            this.resLabel.Size = new System.Drawing.Size(39, 16);
+            this.resLabel.TabIndex = 11;
+            this.resLabel.Text = "Pris:";
             // 
-            // radioAtDag
+            // toolKveldHelg
             // 
-            this.radioAtDag.AutoSize = true;
-            this.radioAtDag.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioAtDag.Location = new System.Drawing.Point(6, 19);
-            this.radioAtDag.Name = "radioAtDag";
-            this.radioAtDag.Size = new System.Drawing.Size(56, 17);
-            this.radioAtDag.TabIndex = 1;
-            this.radioAtDag.TabStop = true;
-            this.radioAtDag.Text = "Dagtid";
-            this.radioAtDag.UseVisualStyleBackColor = true;
+            this.toolKveldHelg.ToolTipTitle = "Kveld/Helg";
             // 
-            // radioAtKveld
+            // toolDag
             // 
-            this.radioAtKveld.AutoSize = true;
-            this.radioAtKveld.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.radioAtKveld.Location = new System.Drawing.Point(6, 42);
-            this.radioAtKveld.Name = "radioAtKveld";
-            this.radioAtKveld.Size = new System.Drawing.Size(79, 17);
-            this.radioAtKveld.TabIndex = 1;
-            this.radioAtKveld.TabStop = true;
-            this.radioAtKveld.Text = "Kveld/Helg";
-            this.radioAtKveld.UseVisualStyleBackColor = true;
+            this.toolDag.ToolTipTitle = "Dagtid";
             // 
-            // radioAtHoly
+            // toolKveldHverdag
             // 
-            this.radioAtHoly.AutoSize = true;
-            this.radioAtHoly.Location = new System.Drawing.Point(6, 65);
-            this.radioAtHoly.Name = "radioAtHoly";
-            this.radioAtHoly.Size = new System.Drawing.Size(69, 17);
-            this.radioAtHoly.TabIndex = 1;
-            this.radioAtHoly.TabStop = true;
-            this.radioAtHoly.Text = "Helligdag";
-            this.radioAtHoly.UseVisualStyleBackColor = true;
+            this.toolKveldHverdag.ToolTipTitle = "Kveld hverdag/Dagtid helg";
+            // 
+            // toolNattHelg
+            // 
+            this.toolNattHelg.ToolTipTitle = "Natt (helg)";
+            // 
+            // toolHoly
+            // 
+            this.toolHoly.ToolTipTitle = "Helligdager";
+            // 
+            // toolKveldMt
+            // 
+            this.toolKveldMt.ToolTipTitle = "Kveld hverdag";
+            // 
+            // toolLørdag
+            // 
+            this.toolLørdag.ToolTipTitle = "Lørdag";
+            // 
+            // toolNattMt
+            // 
+            this.toolNattMt.ToolTipTitle = "Natt og helg";
+            // 
+            // copyButton
+            // 
+            this.copyButton.Location = new System.Drawing.Point(264, 317);
+            this.copyButton.Name = "copyButton";
+            this.copyButton.Size = new System.Drawing.Size(75, 23);
+            this.copyButton.TabIndex = 18;
+            this.copyButton.Text = "Kopier pris";
+            this.copyButton.UseVisualStyleBackColor = true;
+            this.copyButton.Click += new System.EventHandler(this.copyButton_Click);
+            // 
+            // toolCopy
+            // 
+            this.toolCopy.ToolTipTitle = "Kopiert!";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(187, 318);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(71, 28);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.omToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(485, 24);
+            this.menuStrip1.TabIndex = 14;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // omToolStripMenuItem
+            // 
+            this.omToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.takstinformasjonToolStripMenuItem,
+            this.versjonToolStripMenuItem,
+            this.avsluttToolStripMenuItem});
+            this.omToolStripMenuItem.Name = "omToolStripMenuItem";
+            this.omToolStripMenuItem.Size = new System.Drawing.Size(31, 20);
+            this.omToolStripMenuItem.Text = "&Fil";
+            this.omToolStripMenuItem.Click += new System.EventHandler(this.omToolStripMenuItem_Click);
+            // 
+            // takstinformasjonToolStripMenuItem
+            // 
+            this.takstinformasjonToolStripMenuItem.Name = "takstinformasjonToolStripMenuItem";
+            this.takstinformasjonToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.takstinformasjonToolStripMenuItem.Text = "Takstinformasjon";
+            this.takstinformasjonToolStripMenuItem.Click += new System.EventHandler(this.takstinformasjonToolStripMenuItem_Click);
+            // 
+            // versjonToolStripMenuItem
+            // 
+            this.versjonToolStripMenuItem.Name = "versjonToolStripMenuItem";
+            this.versjonToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.versjonToolStripMenuItem.Text = "Versjon";
+            this.versjonToolStripMenuItem.Click += new System.EventHandler(this.versjonToolStripMenuItem_Click);
+            // 
+            // avsluttToolStripMenuItem
+            // 
+            this.avsluttToolStripMenuItem.Name = "avsluttToolStripMenuItem";
+            this.avsluttToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.Q)));
+            this.avsluttToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.avsluttToolStripMenuItem.Text = "&Avslutt";
+            this.avsluttToolStripMenuItem.Click += new System.EventHandler(this.avsluttToolStripMenuItem_Click);
             // 
             // HovedVindu
             // 
+            this.AcceptButton = this.calculateButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 665);
+            this.ClientSize = new System.Drawing.Size(485, 358);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.copyButton);
+            this.Controls.Add(this.resLabel);
+            this.Controls.Add(this.tilLabel);
+            this.Controls.Add(this.fremLabel);
+            this.Controls.Add(this.minLabel);
+            this.Controls.Add(this.kmLabel);
             this.Controls.Add(this.tidMandal);
             this.Controls.Add(this.tidVennesla);
             this.Controls.Add(this.tidAgder);
             this.Controls.Add(this.paxBox);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tilBox);
+            this.Controls.Add(this.fremBox);
+            this.Controls.Add(this.minBox);
+            this.Controls.Add(this.kmBox);
             this.Controls.Add(this.resultBox);
-            this.Controls.Add(this.taxiLag);
+            this.Controls.Add(this.taxiLagBox);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "HovedVindu";
             this.Text = "07000 Priskalkulator";
-            this.taxiLag.ResumeLayout(false);
-            this.taxiLag.PerformLayout();
+            this.taxiLagBox.ResumeLayout(false);
+            this.taxiLagBox.PerformLayout();
             this.paxBox.ResumeLayout(false);
             this.paxBox.PerformLayout();
             this.tidAgder.ResumeLayout(false);
@@ -448,6 +630,9 @@
             this.tidMandal.PerformLayout();
             this.tidVennesla.ResumeLayout(false);
             this.tidVennesla.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,13 +645,12 @@
         private System.Windows.Forms.RadioButton radioMandal;
         private System.Windows.Forms.RadioButton radioVennesla;
         public System.Windows.Forms.RadioButton radioAgder;
-        private System.Windows.Forms.GroupBox taxiLag;
+        private System.Windows.Forms.GroupBox taxiLagBox;
         private System.Windows.Forms.TextBox resultBox;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox kmBox;
+        private System.Windows.Forms.TextBox minBox;
+        private System.Windows.Forms.TextBox fremBox;
+        private System.Windows.Forms.TextBox tilBox;
         private System.Windows.Forms.GroupBox paxBox;
         public System.Windows.Forms.RadioButton radioLiten;
         private System.Windows.Forms.RadioButton radioMedium;
@@ -486,6 +670,27 @@
         private System.Windows.Forms.RadioButton radioMtKveld;
         private System.Windows.Forms.RadioButton radioMtLørdag;
         private System.Windows.Forms.RadioButton radioMtHoly;
+        private System.Windows.Forms.Label kmLabel;
+        private System.Windows.Forms.Label minLabel;
+        private System.Windows.Forms.Label fremLabel;
+        private System.Windows.Forms.Label tilLabel;
+        private System.Windows.Forms.Label resLabel;
+        private System.Windows.Forms.ToolTip toolKveldHelg;
+        private System.Windows.Forms.ToolTip toolDag;
+        private System.Windows.Forms.ToolTip toolKveldHverdag;
+        private System.Windows.Forms.ToolTip toolNattHelg;
+        private System.Windows.Forms.ToolTip toolHoly;
+        private System.Windows.Forms.ToolTip toolNattMt;
+        private System.Windows.Forms.ToolTip toolKveldMt;
+        private System.Windows.Forms.ToolTip toolLørdag;
+        private System.Windows.Forms.Button copyButton;
+        private System.Windows.Forms.ToolTip toolCopy;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem omToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem takstinformasjonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem versjonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem avsluttToolStripMenuItem;
     }
 }
 
