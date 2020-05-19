@@ -278,14 +278,14 @@ namespace Priskalkulator
         private void kmBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Godtar 0-9, backspace og .
-            if (((e.KeyChar < 48 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 46))
+            if (((e.KeyChar < 48 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 44))
             {
                 e.Handled = true;
                 return;
             }
 
             // Sjekker at det bare er èn decimal.
-            if (e.KeyChar == 46)
+            if (e.KeyChar == 44)
             {
                 if ((sender as TextBox).Text.IndexOf(e.KeyChar) != -1)
                     e.Handled = true;
@@ -295,14 +295,14 @@ namespace Priskalkulator
         private void minBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Godtar 0-9, backspace og .
-            if (((e.KeyChar < 48 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 46))
+            if (((e.KeyChar < 48 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 44))
             {
                 e.Handled = true;
                 return;
             }
 
             // Sjekker at det bare er èn decimal.
-            if (e.KeyChar == 46)
+            if (e.KeyChar == 44)
             {
                 if ((sender as TextBox).Text.IndexOf(e.KeyChar) != -1)
                     e.Handled = true;
@@ -312,14 +312,14 @@ namespace Priskalkulator
         private void fremBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Godtar 0-9, backspace og .
-            if (((e.KeyChar < 48 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 46))
+            if (((e.KeyChar < 48 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 44))
             {
                 e.Handled = true;
                 return;
             }
 
             // Sjekker at det bare er èn decimal.
-            if (e.KeyChar == 46)
+            if (e.KeyChar == 44)
             {
                 if ((sender as TextBox).Text.IndexOf(e.KeyChar) != -1)
                     e.Handled = true;
@@ -334,14 +334,14 @@ namespace Priskalkulator
         private void tilBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Godtar 0-9, backspace og .
-            if (((e.KeyChar < 48 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 46))
+            if (((e.KeyChar < 48 || e.KeyChar > 57) && e.KeyChar != 8 && e.KeyChar != 44))
             {
                 e.Handled = true;
                 return;
             }
 
             // Sjekker at det bare er èn decimal.
-            if (e.KeyChar == 46)
+            if (e.KeyChar == 44)
             {
                 if ((sender as TextBox).Text.IndexOf(e.KeyChar) != -1)
                     e.Handled = true;
@@ -416,10 +416,15 @@ namespace Priskalkulator
 
         private void versjonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("v 0.1 BETA - 06.05.2020");
+            MessageBox.Show("v1.0 - 19.05.2020");
         }
 
         private void omToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HovedVindu_Load(object sender, EventArgs e)
         {
 
         }

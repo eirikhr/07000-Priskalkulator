@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Priskalkulator", "Priskalkulator\Priskalkulator.csproj", "{87FAF707-38D2-4431-9CCF-3A914E45AC91}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup 0.2", "Setup 0.2\Setup 0.2.vdproj", "{40E1E702-FF76-4D64-AA9C-BB84916BEBEA}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "07000 Priskalkulator Setup v1.0 - 19052020", "07000 Priskalkulator Setup v1.0 - 19052020\07000 Priskalkulator Setup v1.0 - 19052020.vdproj", "{FE32A763-C174-4801-A74F-FD696EE41C95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{87FAF707-38D2-4431-9CCF-3A914E45AC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87FAF707-38D2-4431-9CCF-3A914E45AC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87FAF707-38D2-4431-9CCF-3A914E45AC91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40E1E702-FF76-4D64-AA9C-BB84916BEBEA}.Debug|Any CPU.ActiveCfg = Debug
-		{40E1E702-FF76-4D64-AA9C-BB84916BEBEA}.Release|Any CPU.ActiveCfg = Release
+		{FE32A763-C174-4801-A74F-FD696EE41C95}.Debug|Any CPU.ActiveCfg = Debug
+		{FE32A763-C174-4801-A74F-FD696EE41C95}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
