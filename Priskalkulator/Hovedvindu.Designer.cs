@@ -629,7 +629,8 @@
             this.takstLabel1.Name = "takstLabel1";
             this.takstLabel1.Size = new System.Drawing.Size(180, 13);
             this.takstLabel1.TabIndex = 24;
-            this.takstLabel1.Text = "Takster oppdatert: 19.05.2020";
+            this.takstLabel1.Text = "Takster oppdatert: 24.05.2020";
+            this.takstLabel1.Click += new System.EventHandler(this.takstLabel1_Click);
             // 
             // HovedVindu
             // 

@@ -411,12 +411,12 @@ namespace Priskalkulator
 
         private void takstinformasjonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Takster oppdatert:\n06.06.2020.");
+            MessageBox.Show("Takster oppdatert:\n24.05.2020.");
         }
 
         private void versjonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("v1.0 - 19.05.2020");
+            MessageBox.Show("v1.01 - 24.05.2020");
         }
 
         private void omToolStripMenuItem_Click(object sender, EventArgs e)
@@ -425,6 +425,11 @@ namespace Priskalkulator
         }
 
         private void HovedVindu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void takstLabel1_Click(object sender, EventArgs e)
         {
 
         }

@@ -43,7 +43,7 @@ namespace Priskalkulator
                     float over = km - sealing;
                     float sv = ((km + frem) * kmM) + (min * tid) + startM;
                     if (km > sealing)
-                        sv = (sealing * kmM) + (over * kmOverM) + startM;
+                        sv = (sealing * kmM) + (over * kmOverM) + (min * tid) + startM;
                     if (sv < minM)
                         sv = minM;
                     return sv + til;
@@ -88,7 +88,7 @@ namespace Priskalkulator
                     float over = km - sealing;
                     float sv = ((km + frem) * kmM) + (min * tid) + startM;
                     if (km > sealing)
-                        sv = (sealing * kmM) + (over * kmOverM) + startM;
+                        sv = (sealing * kmM) + (over * kmOverM) + (min * tid) + startM;
                     if (sv < minM)
                         sv = minM;
                     return sv + til;
@@ -133,7 +133,7 @@ namespace Priskalkulator
                     float over = km - sealing;
                     float sv = ((km + frem) * kmM) + (min * tid) + startM;
                     if (km > sealing)
-                        sv = (sealing * kmM) + (over * kmOverM) + startM;
+                        sv = (sealing * kmM) + (over * kmOverM) + (min * tid) + startM;
                     if (sv < minM)
                         sv = minM;
                     return sv + til;
@@ -181,7 +181,7 @@ namespace Priskalkulator
                     float over = km - sealing;
                     float sv = ((km + frem) * kmM) + (min * tid) + startM;
                     if (km > sealing)
-                        sv = (sealing * kmM) + (over * kmOverM) + startM;
+                        sv = (sealing * kmM) + (over * kmOverM) + (min * tid) + startM;
                     if (sv < minM)
                         sv = minM;
                     return sv + til;
@@ -224,7 +224,7 @@ namespace Priskalkulator
                     float over = km - sealing;
                     float sv = ((km + frem) * kmM) + (min * tid) + startM;
                     if (km > sealing)
-                        sv = (sealing * kmM) + (over * kmOverM) + startM;
+                        sv = (sealing * kmM) + (over * kmOverM) + (min * tid) + startM;
                     if (sv < minM)
                         sv = minM;
                     return sv + til;
@@ -267,7 +267,7 @@ namespace Priskalkulator
                     float over = km - sealing;
                     float sv = ((km + frem) * kmM) + (min * tid) + startM;
                     if (km > sealing)
-                        sv = (sealing * kmM) + (over * kmOverM) + startM;
+                        sv = (sealing * kmM) + (over * kmOverM) + (min * tid) + startM;
                     if (sv < minM)
                         sv = minM;
                     return sv + til;
@@ -310,7 +310,7 @@ namespace Priskalkulator
                     float over = km - sealing;
                     float sv = ((km + frem) * kmM) + (min * tid) + startM;
                     if (km > sealing)
-                        sv = (sealing * kmM) + (over * kmOverM) + startM;
+                        sv = (sealing * kmM) + (over * kmOverM) + (min * tid) + startM;
                     if (sv < minM)
                         sv = minM;
                     return sv + til;
